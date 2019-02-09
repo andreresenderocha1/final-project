@@ -1,0 +1,20 @@
+<div class="card text-center m-5">
+    <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{$ctrl.user.name}}</h5>
+        <h5 class="card-title">{{$ctrl.user.age}}</h5>
+        <a ui-sref="userDetail({id: $ctrl.user.id})" class="btn btn-primary text-white">User Detail</a>
+    </div>
+</div>
